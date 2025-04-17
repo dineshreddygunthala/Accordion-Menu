@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Pokémon Info</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>🔍 Pokémon Search</h1>
+    <input type="text" id="pokemonName" placeholder="Enter Pokémon name (e.g., pikachu)">
+    <button onclick="fetchPokemon()">Get Info</button>
+
+    <div id="rawResponse" class="output">
+      <h3>📦 Raw Response:</h3>
+      <pre id="rawData"></pre>
+    </div>
+
+    <div id="parsedInfo" class="output">
+      <h3>🎯 Pokémon Info:</h3>
+      <p><strong>Name:</strong> <span id="pokeName"></span></p>
+      <p><strong>Type:</strong> <span id="pokeType"></span></p>
+      <p><strong>Height:</strong> <span id="pokeHeight"></span></p>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
